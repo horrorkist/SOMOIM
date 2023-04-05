@@ -44,8 +44,13 @@ export default function Landing() {
                 }&redirect_uri=${
                   import.meta.env.VITE_KAKAO_REDIRECT_URI
                 }&response_type=code`}
-                className="rounded-md px-10 h-10 flex justify-center items-center text-center border border-kakao bg-kakao"
+                className="rounded-md px-10 h-10 flex justify-center items-center text-center border border-kakao bg-kakao relative"
               >
+                <img
+                  src="/pngegg.png"
+                  alt="카카오 로고"
+                  className="w-5 absolute left-2 aspect-square"
+                />
                 <p>카카오로 로그인</p>
               </a>
               <a
